@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+
+    <style>
+        .main-menu-area > .container {
+            /* margin-left: 20px !important; */
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin-right: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,26 +43,42 @@
                                 </a>
                             </div>
                             <div class="site_info d-flex justify-content-between">
-                                <div class="single_info">
+                                <div class="single_info locadress" onclick="window.location.href=''">
                                     <img src="assets/images/location.png" alt="Location" class="img-fluid">
                                     <div class="info_data">
                                         <h6>Location</h6>
-                                        <p>1010 New York, NY 10018 US</p>
+                                        <p>Maryland Nekede, Owerri</p>
                                     </div>
                                 </div>
-                                <div class="single_info">
+                                <div class="single_info locadress" onclick="window.location.href='tel: 0901 6189 060'">
                                     <img src="assets/images/phone.png" alt="Location" class="img-fluid">
                                     <div class="info_data">
                                         <h6>Phone</h6>
-                                        <p>+880 2456 547</p>
+                                        <p>+234 (0) 901 6189 060</p>
                                     </div>
                                 </div>
-                                <div class="single_info">
+
+
+                                
+
+
+                                <div class="single_info locadress">
                                     <button class="special-button"
-                                        onclick="window.location.href = 'apply_form.html';">Apply Now <i
+                                        onclick="window.location.href = 'https://portal.claretianuniversity.edu.ng/students/applicationguide';">Apply Now <i
                                             class="fa fa-angle-right"></i> <span class="button_icon"><i
                                                 class="far fa-file-alt"></i></span></button>
                                 </div>
+
+                                <style>
+                                    .locadress {
+                                        cursor: pointer;
+                                    }
+                                
+                                    .locadress:hover {
+                                        transform: scale(1.04);
+                                        transition: transform ease-in-out .3s;
+                                    }
+                                </style>
                             </div>
                         </div>
                     </div>
@@ -75,73 +104,262 @@
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
-                                                role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Home
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                <a class="dropdown-item active" href="index.html">University</a>
-                                                <a class="dropdown-item" href="index-2.html">Modern University</a>
-                                                <a class="dropdown-item" href="index-3.html">Online Courses</a>
-                                                <a class="dropdown-item" href="index-4.html">Kindergarten</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.html">About</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                                                 role="button" data-bs-toggle="dropdown">
-                                                Pages
+                                                Administration
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="students.html">Students</a></li>
-                                                <li><a class="dropdown-item" href="departments.html">Departments</a></li>
-                                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
-                                                <li><a class="dropdown-item" href="teachers.html">Teachers</a></li>
-                                                <li><a class="dropdown-item" href="events.html">Events</a></li>
-                                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                                <li><a class="dropdown-item" href="apply_form.html">Apply Form</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">University <br>Administration</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">CUN Governance <br>Structure</a></li>
+                                                        <li><a class="dropdown-item" href="#">The Chancellor</a></li>
+                                                        <li><a class="dropdown-item" href="#">The Pro-Chancellor</a></li>
+                                                        <li><a class="dropdown-item" href="#">The Vice Chancellor</a></li>
+                                                        <li><a class="dropdown-item" href="#">Office of the Deputy<br>Vice Chancellor (DVC)</a></li>
+                                                        <li><a class="dropdown-item" href="#">Board of Trustees</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="departments.html">The Bursary Unit</a></li>
+                                                <li><a class="dropdown-item" href="courses.html">The Registry Unit</a></li>
+                                                <li><a class="dropdown-item" href="teachers.html">Public Relations <br>Unit</a></li>
+                                                <li><a class="dropdown-item" href="events.html">The Internal Audit <br>Unit</a></li>
+                                                <li><a class="dropdown-item" href="gallery.html">The Senate</a></li>
                                             </ul>
                                         </li>
+
+                                        <!-- End of first Menu item (Administrator) -->
+
+
                                         <li class="nav-item dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="blogDropdown1" role="button" data-bs-toggle="dropdown">Blog</a>
-                                            <ul class="dropdown-menu" aria-labelledby="blogDropdown1">
-                                                <li><a class="dropdown-item" href="blog_01.html">Blog 1</a></li>
-                                                <li><a class="dropdown-item" href="blog_02.html">Blog 2</a></li>
-                                                <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                Students
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Student Admission Status</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="https://claretianuniversity.edu.ng/dev_/admission-status/">Click HERE to check<br>your Admission Status</a></li>
+                                                        <li><a class="dropdown-item" href="#">Post UTME Result</a></li>
+                                                        <li><a class="dropdown-item" href="#">Direct Entry O'Level<br>Update</a></li>
+                                                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=eAY7hyyu1Mc" target="_blank">Campus Tour for <br>Prospective Students</a></li>
+                                                        <li><a class="dropdown-item" href="#">Check your screening <br>Result HERE</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="result.html" class="nav-link">Result</a>
+
+                                        <!-- End of Second Menu item (Prospective Students) -->
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                Admissions
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Undergraduate Studies</a>
+                                                    <li><a class="dropdown-item" href="#">School of Post Graduate</a></li>
+                                                    <li><a class="dropdown-item" href="https://portal.claretianuniversity.edu.ng/students/applicationguide">Apply Now</a></li>
+                                                    <li><a class="dropdown-item" href="#">Available Courses for Study</a></li>
+                                                    <li><a class="dropdown-item" href="#">Admission Requirements</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Admission Unit</a></li>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="notice.html" class="nav-link">Notice</a>
+
+                                        <!-- End of Third Menu item (Admissions) -->
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                Academics
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-wrap: nowrap;">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Science <br>& Computing</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>&
+                                                                Social Science</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Accounting</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Taxation</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Economics</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Computing & Math- <br>ematical Sciences</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Mathematics</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Cyber Security</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Software <br>Engineering</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Computer <br>Science</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Physical Sciences</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Physics</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Chemistry</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Physics with <br>Electronics Renewable <br>Energy</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Biological
+                                                                Sciences</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Biology</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Foreinsic Science</a></li>
+                                                            </ul>
+                                                        </li> 
+                                                    </ul>
+
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Arts, Social <br>and Management Science</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Humanities</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Arts <br>(B.A) in Phylosophy</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Criminology <br>and Peace Studies</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Agriculture</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of
+                                                                <br>Agriculture</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Agriculture <br>(B.Agric), Extension, <br>Crop Science, Animal <br>Production, Economics <br>Soil Science</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School Health Sciences</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of
+                                                                <br>Medical Sciences</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Public Health</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of <br>Phylosophy</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bachelor of <br>Nursing Sciences</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Directorates, Institures <br>& Centres</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">Directorate of Research <br>and Innovation</a></li>
+                                                        <li><a class="dropdown-item" href="#">Centre of Distance <br>Learning & Continuing <br>Education</a></li>
+                                                        <li><a class="dropdown-item" href="#">AIKIT</a></li>
+                                                        <li><a class="dropdown-item" href="#">Trans-National Education</a></li>
+                                                        <li><a class="dropdown-item" href="#">Directorate for <br>International Cooperating <br>and Linkages</a></li>
+                                                        <li><a class="dropdown-item" href="#">Endownment Centres</a></li>
+                                                        <li><a class="dropdown-item" href="#">Science Medicine <br>Research Centre</a></li>
+                                                    </ul>
+                                                </li>
+                                                
+                                            </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="contact.html" class="nav-link">Contact</a>
+                                        <!-- End of 4th Menu item (Academics) -->
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                E-Resources
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">E-Learning</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="https://classroom.google.com/" target="_blank">Login to LMS</a></li>
+                                                        <li><a class="dropdown-item" href="https://elearning.claretianuniversity.edu.ng/" target="_blank">Free Learning Resources</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="dropdown-item" href="https://elibrary.claretianuniversity.edu.ng/" target="_blank">E-Library</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="#search_modal" data-bs-toggle="modal" data-bs-target="#search_modal" class="nav-link"><i class="fa fa-search"></i></a>
+                                        <!-- End of 5th Menu item (E-Resources) -->
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                Units
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 230px !important;">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Academic Support Unit</a>
+                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                                                ITC Centre
+                                                            </a>
+                                                            <ul style="left: auto !important; right: 100% !important;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="https://elibrary.claretianuniversity.edu.ng/" target="_blank">E-Learning Unit</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">University Library</a></li>
+                                                        <li><a class="dropdown-item" href="#">Audio Visual Unit</a></li>
+                                                        <li><a class="dropdown-item" href="#">General & Entrepreneural <br>Studies Unit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Laboratories, Studios <br>and Workshops</a></li>
+                                                        <li><a class="dropdown-item" href="#">Equipment Maintenance <br>Centre</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Teaching <br>and Research Farm</a></li>
+                                                        <li><a class="dropdown-item" href="#">Botanical and <br>Zoological Garden</a></li>
+                                                        <li><a class="dropdown-item" href="#">Student Industrial <br>Work Unit</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Teaching <br>Hospital</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Public Service Unit</a>
+                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">University Bookshop</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Conference <br>Centre & Guest House</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Consultancy <br>Service Unit</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Press <br>Limited</a></li>
+                                                        <li><a class="dropdown-item" href="#">University Staff Schools</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Community Service Unit</a>
+                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">Health Center</a></li>
+                                                        <li><a class="dropdown-item" href="#">Banking Services</a></li>
+                                                        <li><a class="dropdown-item" href="#">Catering Services</a></li>
+                                                        <li><a class="dropdown-item" href="#">Workshop Centre</a></li>
+                                                        <li><a class="dropdown-item" href="#">Securiry Unit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Sports & Recreational <br>Complex</a></li>
+                                                        <li><a class="dropdown-item" href="#">Staff Club</a></li>
+                                                        <li><a class="dropdown-item" href="#">Students Centre</a></li>
+                                                        <li><a class="dropdown-item" href="#">Workshop, Maintenane <br>Physical Planning</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
                                         </li>
+                                        <!-- End of 6th Menu item (Units) -->
+
+                                        <li class="nav-item">
+                                            <a href="#search_modal" data-bs-toggle="modal" data-bs-target="#search_modal" class="nav-link"><i
+                                                    class="fa fa-search"></i></a>
+                                        </li>
+                                        <!-- End of Search -->
+
                                     </ul>
-                                    <div class="collapse-bar">
-                                        <a class="navbar-brand" data-bs-toggle="collapse" href="#languages_options"><i
-                                                class="fa fa-bars"></i></a>
-                                        <div class="option-menu collapse" id="languages_options">
-                                            <nav>
-                                                <ul>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">English</a>
-                                                        <a class="nav-link" href="#">Bangla</a>
-                                                        <a class="nav-link" href="#">Hindi</a>
-                                                        <a class="nav-link" href="#">Spanish</a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
+                                    
+                                        <a href="https://portal.claretianuniversity.edu.ng/users/login" style="text-wrap: nowrap;" class="btn btn-outline-info login-btn">Login <i class="fa-solid fa-right-to-bracket text-info login-icon"></i></a>
+
+                                        <style>
+                                            .login-btn:hover .login-icon{
+                                                color: #000 !important;
+                                            }
+                                        </style>
+                                    
                                 </div>
                             </nav>
                         </div>
@@ -150,7 +368,7 @@
             </div>
             <!-- Button trigger modal -->
             <!-- Start Search Modal -->
-            <div class="modal fade" id="search_modal">
+            <!-- <div class="modal fade" id="search_modal">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -194,7 +412,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- End Search Modal -->
         </div>
     </header>
@@ -210,9 +428,9 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="slider-content text-white pb-5 mb-5">
-                                <h2 class="display-2">Better Education For a Better World</h2>
-                                <p>Best Education Theme In 2023</p>
-                                <a href="contact.html" class="button_one mt-4">Contact Us</a>
+                                <h2 class="display-5">A Community of Scholars</h2>
+                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster creativity and academic growth.</p>
+                                <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide" class="button_one mt-4">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -224,9 +442,10 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="slider-content text-white pb-5 mb-5">
-                                <h2 class="display-2">Standart Syllebaus For Students</h2>
-                                <p>Best Education Theme In 2023</p>
-                                <a href="contact.html" class="button_one mt-4">Contact Us</a>
+                                <h2 class="display-5">Welcome to Claretian University – Inspiring Excellence</h2>
+                                <p>Empowering minds, shaping futures. Join us at Claretian University, where excellence in education and holistic
+                                development meet.</p>
+                                <a href="about.html" class="button_one mt-4">About Us</a>
                             </div>
                         </div>
                     </div>
@@ -238,8 +457,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="slider-content text-white pb-5 mb-5">
-                                <h2 class="display-2">Maintaince Educational Value</h2>
-                                <p>Best Education Theme In 2023</p>
+                                <h2 class="display-5">Innovative Learning Environment</h2>
+                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster creativity and academic growth.</p>
                                 <a href="contact.html" class="button_one mt-4">Contact Us</a>
                             </div>
                         </div>
@@ -315,12 +534,15 @@
                     </div>
                     <div class="col-lg-6 equal-height">
                         <div class="half_column_content">
-                            <h2 class="sub-title">Welcome To Campus</h2>
-                            <p>Smply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry’s standard dummy text ever since the 1500s, Smply dummy text of the </p>
-                            <p>Smply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry’s </p>
-                            <div class="theme-list">
+                            <h5 class="sub-title">A Few Words About Claretian University</h5>
+                            <p>The Claretians (Missionary Sons of the Immaculate Heart of Mary) are an international, Roman Catholic religious
+                            congregation of priests, brothers, and seminarians. </p>Like our founder, Saint Anthony Mary Claret, we strive to reflect
+                            God’s reign of life, love, justice, and peace to our world today by responding to the most urgent needs in ways that are
+                            most timely and
+                            effective.</p>
+                            <p>The Claretian University of Nigeria was founded by the Claretian Missionaries in Nigeria and reflects the same spirit
+                            and mission of the Claretians.</p>
+                            <!-- <div class="theme-list">
                                 <ul>
                                     <li>Great Technology</li>
                                     <li>Best Industry Leaders</li>
@@ -333,7 +555,7 @@
                                     <li>Best Industry Leaders</li>
                                     <li>Learn Courses Online</li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
