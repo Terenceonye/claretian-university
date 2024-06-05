@@ -53,6 +53,10 @@ a {
   position: relative;
 }
 
+.site_logo {
+  width: 22vw;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
