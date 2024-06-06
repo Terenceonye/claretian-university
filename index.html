@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Claretian University Of Nigeria</title>
-    
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -17,8 +17,26 @@
 
     <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
 
+    <script>
+        // Function to load content into a specified element
+            function loadContent(url, elementId) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById(elementId).innerHTML = data;
+                    })
+                    .catch(error => console.error(`Error loading ${url}:`, error.message));
+            }
+
+            // Call the function to load the header and footer when the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', () => {
+                loadContent('header.html', 'header');
+                loadContent('footer.html', 'footer');
+            });
+    </script>
+
     <style>
-        .main-menu-area > .container {
+        .main-menu-area>.container {
             /* margin-left: 20px !important; */
             text-align: center;
         }
@@ -31,391 +49,8 @@
 
 <body>
     <!-- Start Header -->
-    <header>
-        <div class="header_top_area my-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header_top d-flex justify-content-between">
-                            <div class="site_logo">
-                                <a href="index.html">
-                                    <h2><img src="./assets/images/logo-claretian.jpeg" alt="logo" width="100%"></h2>
-                                </a>
-                            </div>
-                            <div class="site_info d-flex justify-content-between">
-                                <div class="single_info locadress" onclick="window.location.href='https://www.google.com/maps/place/Claretian+University/@5.4481011,6.9989314,14z/data=!3m1!4b1!4m6!3m5!1s0x104259456fea5491:0x1513ade62ee0a58a!8m2!3d5.4481015!4d7.0195311!16s%2Fg%2F11t8xlyrvl?entry=ttu'">
-                                    <img src="assets/images/location.png" alt="Location" class="img-fluid">
-                                    <div class="info_data">
-                                        <h6>Location</h6>
-                                        <p>Maryland Nekede, Owerri</p>
-                                    </div>
-                                </div>
-                                <div class="single_info locadress" onclick="window.location.href='tel: 0901 6189 060'">
-                                    <img src="assets/images/phone.png" alt="Location" class="img-fluid">
-                                    <div class="info_data">
-                                        <h6>Phone</h6>
-                                        <p>+234 (0) 901 6189 060</p>
-                                    </div>
-                                </div>
-
-
-                                
-
-
-                                <div class="single_info locadress">
-                                    <button class="special-button"
-                                        onclick="window.location.href = 'https://portal.claretianuniversity.edu.ng/students/applicationguide';">Apply Now <i
-                                            class="fa fa-angle-right"></i> <span class="button_icon"><i
-                                                class="far fa-file-alt"></i></span></button>
-                                </div>
-
-                                <style>
-                                    .locadress {
-                                        cursor: pointer;
-                                    }
-                                
-                                    .locadress:hover {
-                                        transform: scale(1.04);
-                                        transition: transform ease-in-out .3s;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-menu-area bg_dark_mobile">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-menu default_bg">
-                            <nav class="navbar navbar-expand-lg">
-                                <div class="mobile_site_logo d-none">
-                                    <a href="index.html">
-                                        <h2>Shikh<span>Bo</span></h2>
-                                    </a>
-                                </div>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-bs-toggle="dropdown">
-                                                Administration
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">University <br>Administration</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="#">CUN Governance <br>Structure</a></li>
-                                                        <li><a class="dropdown-item" href="#">The Chancellor</a></li>
-                                                        <li><a class="dropdown-item" href="#">The Pro-Chancellor</a></li>
-                                                        <li><a class="dropdown-item" href="#">The Vice Chancellor</a></li>
-                                                        <li><a class="dropdown-item" href="#">Office of the Deputy<br>Vice Chancellor (DVC)</a></li>
-                                                        <li><a class="dropdown-item" href="#">Board of Trustees</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a class="dropdown-item" href="departments.html">The Bursary Unit</a></li>
-                                                <li><a class="dropdown-item" href="courses.html">The Registry Unit</a></li>
-                                                <li><a class="dropdown-item" href="teachers.html">Public Relations <br>Unit</a></li>
-                                                <li><a class="dropdown-item" href="events.html">The Internal Audit <br>Unit</a></li>
-                                                <li><a class="dropdown-item" href="gallery.html">The Senate</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <!-- End of first Menu item (Administrator) -->
-
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                Students
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Student Admission Status</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="https://claretianuniversity.edu.ng/dev_/admission-status/">Click HERE to check<br>your Admission Status</a></li>
-                                                        <li><a class="dropdown-item" href="#">Post UTME Result</a></li>
-                                                        <li><a class="dropdown-item" href="#">Direct Entry O'Level<br>Update</a></li>
-                                                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=eAY7hyyu1Mc" target="_blank">Campus Tour for <br>Prospective Students</a></li>
-                                                        <li><a class="dropdown-item" href="#">Check your screening <br>Result HERE</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <!-- End of Second Menu item (Prospective Students) -->
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                Admissions
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Undergraduate Studies</a>
-                                                    <li><a class="dropdown-item" href="#">School of Post Graduate</a></li>
-                                                    <li><a class="dropdown-item" href="https://portal.claretianuniversity.edu.ng/students/applicationguide">Apply Now</a></li>
-                                                    <li><a class="dropdown-item" href="#">Available Courses for Study</a></li>
-                                                    <li><a class="dropdown-item" href="#">Admission Requirements</a></li>
-                                                    <li><a class="dropdown-item" href="#">Contact Admission Unit</a></li>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <!-- End of Third Menu item (Admissions) -->
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                Academics
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-wrap: nowrap;">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Science <br>& Computing</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>&
-                                                                Social Science</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Accounting</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Taxation</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Economics</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Computing & Math- <br>ematical Sciences</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Mathematics</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Cyber Security</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Software <br>Engineering</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Computer <br>Science</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Physical Sciences</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Physics</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Chemistry</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Physics with <br>Electronics Renewable <br>Energy</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Biological
-                                                                Sciences</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Biology</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Foreinsic Science</a></li>
-                                                            </ul>
-                                                        </li> 
-                                                    </ul>
-
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Arts, Social <br>and Management Science</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of <br>Humanities</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Arts <br>(B.A) in Phylosophy</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Criminology <br>and Peace Studies</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School of Agriculture</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of
-                                                                <br>Agriculture</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Agriculture <br>(B.Agric), Extension, <br>Crop Science, Animal <br>Production, Economics <br>Soil Science</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">School Health Sciences</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Department of
-                                                                <br>Medical Sciences</a>
-                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="#">Bachelor of Science <br>(B.Sc) in Public Health</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of <br>Phylosophy</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bachelor of <br>Nursing Sciences</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Directorates, Institures <br>& Centres</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="#">Directorate of Research <br>and Innovation</a></li>
-                                                        <li><a class="dropdown-item" href="#">Centre of Distance <br>Learning & Continuing <br>Education</a></li>
-                                                        <li><a class="dropdown-item" href="#">AIKIT</a></li>
-                                                        <li><a class="dropdown-item" href="#">Trans-National Education</a></li>
-                                                        <li><a class="dropdown-item" href="#">Directorate for <br>International Cooperating <br>and Linkages</a></li>
-                                                        <li><a class="dropdown-item" href="#">Endownment Centres</a></li>
-                                                        <li><a class="dropdown-item" href="#">Science Medicine <br>Research Centre</a></li>
-                                                    </ul>
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
-                                        <!-- End of 4th Menu item (Academics) -->
-
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                E-Resources
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">E-Learning</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="https://classroom.google.com/" target="_blank">Login to LMS</a></li>
-                                                        <li><a class="dropdown-item" href="https://elearning.claretianuniversity.edu.ng/" target="_blank">Free Learning Resources</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a class="dropdown-item" href="https://elibrary.claretianuniversity.edu.ng/" target="_blank">E-Library</a></li>
-                                                <li><a class="dropdown-item" href="#">Open access</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- End of 5th Menu item (E-Resources) -->
-
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                Units
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 230px !important;">
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Academic Support Unit</a>
-                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                                                ITC Centre
-                                                            </a>
-                                                            <ul style="left: auto !important; right: 100% !important;" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a class="dropdown-item" href="https://elibrary.claretianuniversity.edu.ng/" target="_blank">E-Learning Unit</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">University Library</a></li>
-                                                        <li><a class="dropdown-item" href="#">Audio Visual Unit</a></li>
-                                                        <li><a class="dropdown-item" href="#">General & Entrepreneural <br>Studies Unit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Laboratories, Studios <br>and Workshops</a></li>
-                                                        <li><a class="dropdown-item" href="#">Equipment Maintenance <br>Centre</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Teaching <br>and Research Farm</a></li>
-                                                        <li><a class="dropdown-item" href="#">Botanical and <br>Zoological Garden</a></li>
-                                                        <li><a class="dropdown-item" href="#">Student Industrial <br>Work Unit</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Teaching <br>Hospital</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Public Service Unit</a>
-                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="#">University Bookshop</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Conference <br>Centre & Guest House</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Consultancy <br>Service Unit</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Press <br>Limited</a></li>
-                                                        <li><a class="dropdown-item" href="#">University Staff Schools</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Community Service Unit</a>
-                                                    <ul class="dropdown-menu" style="left: auto !important; right: 100% !important;" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="#">Health Center</a></li>
-                                                        <li><a class="dropdown-item" href="#">Banking Services</a></li>
-                                                        <li><a class="dropdown-item" href="#">Catering Services</a></li>
-                                                        <li><a class="dropdown-item" href="#">Workshop Centre</a></li>
-                                                        <li><a class="dropdown-item" href="#">Securiry Unit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Sports & Recreational <br>Complex</a></li>
-                                                        <li><a class="dropdown-item" href="#">Staff Club</a></li>
-                                                        <li><a class="dropdown-item" href="#">Students Centre</a></li>
-                                                        <li><a class="dropdown-item" href="#">Workshop, Maintenane <br>Physical Planning</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- End of 6th Menu item (Units) -->
-
-                                        <li class="nav-item">
-                                            <a href="#search_modal" data-bs-toggle="modal" data-bs-target="#search_modal" class="nav-link"><i
-                                                    class="fa fa-search"></i></a>
-                                        </li>
-                                        <!-- End of Search -->
-
-                                    </ul>
-                                    
-                                        <a href="https://portal.claretianuniversity.edu.ng/users/login" style="text-wrap: nowrap;" class="btn btn-outline-info login-btn">Login <i class="fa-solid fa-right-to-bracket text-info login-icon"></i></a>
-
-                                        <style>
-                                            .login-btn:hover .login-icon{
-                                                color: #000 !important;
-                                            }
-                                        </style>
-                                    
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Button trigger modal -->
-            <!-- Start Search Modal -->
-            <!-- <div class="modal fade" id="search_modal">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title sm-sub-title">Search Here</h5>
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" class="form-control" placeholder="Search Here">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="search-results">
-                                <h5 class="my-4 sm-sub-title">10 Search Results Found</h5>
-                                <div class="theme-list">
-                                    <ul>
-                                        <li><a href="#">Smply dummy text of the printing and typesetting industry</a>
-                                        </li>
-                                        <li><a href="#">Mauris at varius orci. Vestibulum um felis eu nisl pulvinar</a>
-                                        </li>
-                                        <li><a href="#">Welcome To Our Campus For Learn</a></li>
-                                        <li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less
-                                            </a></li>
-                                        <li><a href="#">has a more-or-less normal distribution of letters, as opposed to
-                                                using.</a></li>
-                                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
-                                        </li>
-                                        <li><a href="#">Build Education Website Using WP</a></li>
-                                        <li><a href="#">Build Education Website Using WordPress </a></li>
-                                        <li><a href="#">And Other Modern Technology</a></li>
-                                        <li><a href="#">assumenda est. Our friendly support team is standing.</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- End Search Modal -->
-        </div>
+    <header id="header">
+        <!-- header goes here -->
     </header>
     <!-- End Header -->
 
@@ -430,8 +65,10 @@
                         <div class="col-md-9">
                             <div class="slider-content text-white pb-5 mb-5">
                                 <h2 class="display-5">A Community of Scholars</h2>
-                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster creativity and academic growth.</p>
-                                <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide" class="button_one mt-4 slide-btn" >Apply Now</a>
+                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster
+                                    creativity and academic growth.</p>
+                                <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide"
+                                    class="button_one mt-4 slide-btn">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -456,8 +93,9 @@
                         <div class="col-md-8">
                             <div class="slider-content text-white pb-5 mb-5">
                                 <h2 class="display-5">Welcome to Claretian University – Inspiring Excellence</h2>
-                                <p>Empowering minds, shaping futures. Join us at Claretian University, where excellence in education and holistic
-                                development meet.</p>
+                                <p>Empowering minds, shaping futures. Join us at Claretian University, where excellence
+                                    in education and holistic
+                                    development meet.</p>
                                 <a href="about.html" class="button_one mt-4 bg-white text-dark">About Us</a>
                             </div>
                         </div>
@@ -471,7 +109,8 @@
                         <div class="col-md-8">
                             <div class="slider-content text-white pb-5 mb-5">
                                 <h2 class="display-5">Innovative Learning Environment</h2>
-                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster creativity and academic growth.</p>
+                                <p>Experience state-of-the-art facilities and cutting-edge technology designed to foster
+                                    creativity and academic growth.</p>
                                 <a href="contact.html" class="button_one mt-4 slide-btn">Contact Us</a>
                             </div>
                         </div>
@@ -496,7 +135,8 @@
                             </div>
                             <div class="service-text">
                                 <h4><span class="our-thing">OUR</span> MISSION</h4>
-                                <p>Securing the future through quality education, fostering excellence, innovation, and holistic development.</p>
+                                <p>Securing the future through quality education, fostering excellence, innovation, and
+                                    holistic development.</p>
                                 <a href="about.html">Read More <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
@@ -508,7 +148,8 @@
                             </div>
                             <div class="service-text">
                                 <h4><span class="our-thing">OUR</span> VISION</h4>
-                                <p>Empowering individuals through education to achieve excellence and transform communities globally.</p>
+                                <p>Empowering individuals through education to achieve excellence and transform
+                                    communities globally.</p>
                                 <a href="#">Read More <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
@@ -520,12 +161,13 @@
                             </div>
                             <div class="service-text">
                                 <h4><span class="our-thing">OUR</span> VALUES</h4>
-                                <p>Empowering individuals through education to achieve excellence and transform communities globally.</p>
+                                <p>Empowering individuals through education to achieve excellence and transform
+                                    communities globally.</p>
                                 <a href="#">Read More <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <style>
                         .our-parent:hover .our-thing {
                             color: #0d1028;
@@ -539,44 +181,48 @@
 
 
     <!-- Start Welcome Section -->
-    <section class="welcome-section py-5 bg-info" data-aos="fade-in" >
+    <section class="welcome-section py-5 bg-info" data-aos="fade-in">
         <div class="welcome-area">
             <div class="container">
                 <div class="equal-height">
                     <div class="half_column_content text-center w-75 m-auto">
                         <h5 class="sub-title">A Few Words About Claretian University</h5>
-                        <p class="text-center text-white">The Claretians (Missionary Sons of the Immaculate Heart of Mary) are an international, Roman Catholic
+                        <p class="text-center text-white">The Claretians (Missionary Sons of the Immaculate Heart of
+                            Mary) are an international, Roman Catholic
                             religious
-                            congregation of priests, brothers, and seminarians. Like our founder, Saint Anthony Mary Claret, we
-                        strive to reflect
-                        God’s reign of life, love, justice, and peace to our world today by responding to the most urgent needs in ways
-                        that are
-                        most timely and
-                        effective.</p>
-                        <p class="text-white">The Claretian University of Nigeria was founded by the Claretian Missionaries in Nigeria and reflects the
+                            congregation of priests, brothers, and seminarians. Like our founder, Saint Anthony Mary
+                            Claret, we
+                            strive to reflect
+                            God’s reign of life, love, justice, and peace to our world today by responding to the most
+                            urgent needs in ways
+                            that are
+                            most timely and
+                            effective.</p>
+                        <p class="text-white">The Claretian University of Nigeria was founded by the Claretian
+                            Missionaries in Nigeria and reflects the
                             same spirit
                             and mission of the Claretians.</p>
-                       
+
                     </div>
                 </div>
 
                 <div class="row mt-3 read-more" data-aos="zoom-in-up" data-aos-delay="300">
                     <div class="col-md-12">
                         <div class="load-more-button pt-4 mx-auto text-center">
-                            <a href="#" class="button_five" style="background-color: #0d1028 !important">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#" class="button_five" style="background-color: #0d1028 !important">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <style>
-                    
-                /* .read-more i{
+                    /* .read-more i{
                     padding-left: 10px;
                 } */
 
-                .read-more:hover {
-                    transform: scale(1.2) !important
-                }
+                    .read-more:hover {
+                        transform: scale(1.2) !important
+                    }
                 </style>
             </div>
         </div>
@@ -600,12 +246,13 @@
                 <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="single-item">
                         <div class="item-icon">
-                            <img class="img-fluid" src="assets/images/medical.jpg" alt="icon">
+                            <img class="img-fluid" src="assets/images/medical dept.jpg" alt="icon">
                         </div>
                         <div class="item-text">
                             <h4><a href="#">Medical Sciences</a></h4>
-                            <p>The Medical Sciences department provides comprehensive education and training, preparing students for careers in
-                            healthcare, research, and medical technology innovation.</p>
+                            <p>The Medical Sciences department provides comprehensive education and training, preparing
+                                students for careers in
+                                healthcare, research, and medical technology innovation.</p>
                             <a href="#" class="link_btn">Read More <i class="fa fa-angle-right"></i> </a>
                         </div>
                     </div>
@@ -613,12 +260,13 @@
                 <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="single-item">
                         <div class="item-icon">
-                            <img class="img-fluid" src="assets/images/agric.jpg" alt="icon">
+                            <img class="img-fluid" src="assets/images/agric dept..jpg" alt="icon">
                         </div>
                         <div class="item-text">
                             <h4><a href="#">Agriculture</a></h4>
-                            <p>The Agriculture department focuses on sustainable farming practices, agribusiness, and agricultural research, preparing
-                            students to address global food security challenges.</p>
+                            <p>The Agriculture department focuses on sustainable farming practices, agribusiness, and
+                                agricultural research, preparing
+                                students to address global food security challenges.</p>
                             <a href="#" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i> </a>
                         </div>
                     </div>
@@ -630,9 +278,11 @@
                         </div>
                         <div class="item-text">
                             <h4><a href="course-view.html">Computing and Mathematical Sciences</a></h4>
-                            <p>The Computing and Mathematical Sciences department develops analytical and technical skills, focusing on software
-                            development, data analysis, and mathematical problem-solving techniques.</p>
-                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i> </a>
+                            <p>The Computing and Mathematical Sciences department develops analytical and technical
+                                skills, focusing on software
+                                development, data analysis, and mathematical problem-solving techniques.</p>
+                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -643,10 +293,12 @@
                         </div>
                         <div class="item-text">
                             <h4><a href="course-view.html">Social Science</a></h4>
-                            <p>The Social Science department fosters critical thinking and analysis, offering insights into human behavior, societal
-                            structures, and the impact of social policies.
-</p>
-                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i> </a>
+                            <p>The Social Science department fosters critical thinking and analysis, offering insights
+                                into human behavior, societal
+                                structures, and the impact of social policies.
+                            </p>
+                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -657,10 +309,12 @@
                         </div>
                         <div class="item-text">
                             <h4><a href="course-view.html">Biological Science</a></h4>
-                            <p>The Biological Science department explores life processes, from molecular biology to ecosystems, emphasizing research,
-                            biodiversity conservation, and biotechnological advancements.
-</p>
-                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i> </a>
+                            <p>The Biological Science department explores life processes, from molecular biology to
+                                ecosystems, emphasizing research,
+                                biodiversity conservation, and biotechnological advancements.
+                            </p>
+                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -671,10 +325,12 @@
                         </div>
                         <div class="item-text">
                             <h4><a href="course-view.html">Physical Science</a></h4>
-                            <p>The Physical Sciences department investigates natural phenomena, offering rigorous training in physics, chemistry, and
-                            earth sciences, fostering scientific inquiry and innovation.
-</p>
-                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i> </a>
+                            <p>The Physical Sciences department investigates natural phenomena, offering rigorous
+                                training in physics, chemistry, and
+                                earth sciences, fostering scientific inquiry and innovation.
+                            </p>
+                            <a href="course-view.html" class="link_btn mt-2">Read More <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -697,7 +353,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="section-title mb-4">
+                        <div class="section-title mb-4 text-center">
                             <h4>Courses</h4>
                             <h2>Featured Courses</h2>
                         </div>
@@ -716,13 +372,10 @@
                                 <div class="featured-text-and-info border border-top-0">
                                     <div class="feature-status-wrapper border-bottom">
                                         <div class="feature-status px-4 py-3">
-                                            <div class="single-status">
-                                                <i class="fas fa-user"></i>
-                                                <span>M Park</span>
-                                            </div>
+                                            
                                             <div class="single-status">
                                                 <i class="fas fa-users"></i>
-                                                <span>16 Seats</span>
+                                                <span>34 Seats</span>
                                             </div>
                                             <div class="single-status">
                                                 <i class="fa fa-clock"></i>
@@ -732,63 +385,57 @@
                                     </div>
                                     <div class="feature-content p-4">
                                         <h3><a href="#" onclick="event.preventDefault()">Accounting</a></h3>
-                                        <p>Accounting covers financial reporting, auditing, tax preparation, and management for informed financial
-                                        decision-making.</p>
-                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide" class="button_one mb-3">Apply Now <i
-                                                class="fa fa-angle-right"></i></a>
+                                        <p>Accounting covers financial reporting, auditing, tax preparation, and
+                                            management for informed financial
+                                            decision-making.</p>
+                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide"
+                                            class="button_one mb-3">Apply Now <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-featured border bg-white" data-aos="fade-up" data-aos-duration="500">
                                 <div class="feature-image">
                                     <img src="assets/images/featured_02.jpg" alt="Featured" class="img-fluid">
-                                    <div class="product-price">
+                                    <!-- <div class="product-price">
                                         <p>$80</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="featured-text-and-info border border-top-0">
                                     <div class="feature-status-wrapper border-bottom">
                                         <div class="feature-status px-4 py-3">
-                                            <div class="single-status">
-                                                <i class="fas fa-user"></i>
-                                                <span>M Park</span>
-                                            </div>
                                             <div class="single-status">
                                                 <i class="fas fa-users"></i>
                                                 <span>16 Seats</span>
                                             </div>
                                             <div class="single-status">
                                                 <i class="fa fa-clock"></i>
-                                                <span>4 Years</span>
+                                                <span>5 Years</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="feature-content p-4">
                                         <h3><a href="">Computer Engineering</a></h3>
-                                        <p>Computer Engineering combines hardware and software engineering, focusing on computer systems, networks, and
-                                        technology solutions.</p>
-                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide" class="button_one mb-3">Apply Now <i
-                                                class="fa fa-angle-right"></i></a>
+                                        <p>Computer Engineering combines hardware and software engineering, focusing on
+                                            computer systems, networks, and
+                                            technology solutions.</p>
+                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide"
+                                            class="button_one mb-3">Apply Now <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-featured border bg-white" data-aos="fade-up" data-aos-duration="500">
                                 <div class="feature-image">
                                     <img src="assets/images/featured_03.jpg" alt="Featured" class="img-fluid">
-                                    <div class="product-price">
+                                    <!-- <div class="product-price">
                                         <p>$80</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="featured-text-and-info border border-top-0">
                                     <div class="feature-status-wrapper border-bottom">
                                         <div class="feature-status px-4 py-3">
                                             <div class="single-status">
-                                                <i class="fas fa-user"></i>
-                                                <span>M Park</span>
-                                            </div>
-                                            <div class="single-status">
                                                 <i class="fas fa-users"></i>
-                                                <span>16 Seats</span>
+                                                <span>47 Seats</span>
                                             </div>
                                             <div class="single-status">
                                                 <i class="fa fa-clock"></i>
@@ -798,14 +445,15 @@
                                     </div>
                                     <div class="feature-content p-4">
                                         <h3><a href="">Phylosophy</a></h3>
-                                        <p>Philosophy examines fundamental questions about existence, knowledge, ethics, and reason, fostering critical
-                                        thinking skills.</p>
-                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide" class="button_one mb-3">Apply Now <i
-                                                class="fa fa-angle-right"></i></a>
+                                        <p>Philosophy examines fundamental questions about existence, knowledge, ethics,
+                                            and reason, fostering critical
+                                            thinking skills.</p>
+                                        <a href="https://portal.claretianuniversity.edu.ng/students/applicationguide"
+                                            class="button_one mb-3">Apply Now <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -839,16 +487,20 @@
                         <div class="video_popup_content text-white">
                             <h2 class="sub-title text-white mb-3">CAMPUS TOUR</h2>
                             <h4>A VIRTUAL TOUR OF THE UNIVERSITY CAMPUS</h4>
-                            <p>Welcome to Claretian University, where excellence meets innovation. Our picturesque campus is designed to provide an
-                            enriching environment for learning, growth, and community.</p>
+                            <p>Welcome to Claretian University, where excellence meets innovation. Our picturesque
+                                campus is designed to provide an
+                                enriching environment for learning, growth, and community.</p>
 
-                            <p>Through this virtual tour, we invite you to explore our state-of-the-art facilities, lush green spaces, and vibrant
-                            student life. Discover the academic buildings where groundbreaking research happens, and the modern libraries filled
-                            with endless resources.
-</p>
+                            <p>Through this virtual tour, we invite you to explore our state-of-the-art facilities, lush
+                                green spaces, and vibrant
+                                student life. Discover the academic buildings where groundbreaking research happens, and
+                                the modern libraries filled
+                                with endless resources.
+                            </p>
 
-                            <p>Join us as we take you on a journey through the heart of Claretian University, where tradition meets modernity, and
-                            where every corner is infused with the spirit of academic excellence and innovation.</p>
+                            <p>Join us as we take you on a journey through the heart of Claretian University, where
+                                tradition meets modernity, and
+                                where every corner is infused with the spirit of academic excellence and innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -904,7 +556,7 @@
                                     <img src="assets/images/member_01.jpg" alt="team member" class="img-fluid">
                                     <div class="social-profile">
                                         <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -1057,7 +709,8 @@
                                     facere possimus, omnis voluptas assumenda est. Our friendly support team is
                                     standing. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                                <a href="event-single.html" class="button_one">Join Event <i class="fa fa-angle-right"></i></a>
+                                <a href="event-single.html" class="button_one">Join Event <i
+                                        class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1137,7 +790,7 @@
                     <div class="col-md-12">
                         <div class="section-title text-center mb-4">
                             <h4>Testimonials</h4>
-                            <h2>Our Student Saying...</h2>
+                            <h2>Our Students Saying...</h2>
                         </div>
                     </div>
                 </div>
@@ -1145,61 +798,39 @@
                     <div class="col-md-12">
                         <div class="testimonials-wrapper owl-carousel">
                             <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
+                                <p>I love my school, since i came here, there has been no incident of cultism or things
+                                    like that, everyone is focusing on their academics knowing that passing out here is
+                                    purely on merit</p>
                                 <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
+                                    <p><strong>Deborah Okereke </strong> Student</p>
                                 </div>
                             </div>
                             <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
+                                <p>Claretian University offers diverse programs, including Nursing, Cyber Security, and
+                                    Software Engineering. The rigorous
+                                    curriculum prepares students for successful careers in their fields.
+                                </p>
                                 <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
+                                    <p><strong>Njoku Val </strong> Staff</p>
                                 </div>
                             </div>
                             <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
+                                <p>The dedication of the staff, especially the lecturers, makes students more passionate
+                                    about their studies. The welcoming
+                                    environment creates a cozy atmosphere for learning.</p>
                                 <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
+                                    <p><strong>Okafor John Paul; </strong> Parent</p>
                                 </div>
                             </div>
                             <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
+                                <p>Claretian University offers a conducive learning environment. Thanks to the dedicated
+                                    staff and management for keeping
+                                    students safe and well, and for the valuable lessons taught daily.</p>
                                 <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
+                                    <p><strong>Ndukwu Rosemary </strong> Student</p>
                                 </div>
                             </div>
-                            <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
-                                <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
-                                <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
-                                <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
-                                </div>
-                            </div>
-                            <div class="single-testimonial border-2 p-4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla sint occaecat cupidatat non proident, sunt in culpa.</p>
-                                <div class="testimonial-referance">
-                                    <p><strong>Jhon Smith; </strong> CEO & Founder</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1225,7 +856,8 @@
                     <div class="col-lg-6 mb-3d-5" data-aos="fade-up" data-aos-delay="200">
                         <div class="big-blog-area border bg-white">
                             <div class="blog-thumb">
-                                <a href="blog_details.html"><img src="assets/images/big_blog.jpg" alt="big blog" class="img-fluid"></a>
+                                <a href="blog_details.html"><img src="assets/images/big_blog.jpg" alt="big blog"
+                                        class="img-fluid"></a>
                             </div>
                             <div class="blog-content p-4">
                                 <div class="blog-meta">
@@ -1233,10 +865,12 @@
                                     <span>05 October, 2020</span>
                                 </div>
                                 <div class="blog-text">
-                                    <h3><a href="blog_details.html">Most unusual uses of artificial intelli gence projects.</a></h3>
+                                    <h3><a href="blog_details.html">Most unusual uses of artificial intelli gence
+                                            projects.</a></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore.</p>
-                                    <a href="blog_details.html">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="blog_details.html">Read More <i
+                                            class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1248,7 +882,8 @@
                                     <a href="blog_details.html"><img src="assets/images/blog_01.jpg" alt="blog"></a>
                                 </div>
                                 <div class="blog-content-wrapper">
-                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence projects.</a></h4>
+                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence
+                                            projects.</a></h4>
                                     <p>Lorem ipsum dolor sit amet, cteturadipiscing elit, sed do eiusmod tempor. ipsum
                                         dolor.</p>
                                     <div class="post-meta"><span> Posted on 05 October, 2023</span></div>
@@ -1259,7 +894,8 @@
                                     <a href="blog_details.html"><img src="assets/images/blog_02.jpg" alt="blog"></a>
                                 </div>
                                 <div class="blog-content-wrapper">
-                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence projects.</a></h4>
+                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence
+                                            projects.</a></h4>
                                     <p>Lorem ipsum dolor sit amet, cteturadipiscing elit, sed do eiusmod tempor. ipsum
                                         dolor.</p>
                                     <div class="post-meta"><span> Posted on 05 October, 2023</span></div>
@@ -1270,7 +906,8 @@
                                     <a href="blog_details.html"><img src="assets/images/blog_03.jpg" alt="blog"></a>
                                 </div>
                                 <div class="blog-content-wrapper">
-                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence projects.</a></h4>
+                                    <h4><a href="blog_details.html">Most unusual uses of artificial intelli gence
+                                            projects.</a></h4>
                                     <p>Lorem ipsum dolor sit amet, cteturadipiscing elit, sed do eiusmod tempor. ipsum
                                         dolor.</p>
                                     <div class="post-meta"><span> Posted on 05 October, 2023</span></div>
@@ -1286,105 +923,8 @@
 
 
     <!-- Start Footer -->
-    <footer data-aos="fade-up">
-        <div class="footer-area default_bg">
-            <div class="footer-top section-ptb">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-xs-5">
-                            <div class="single_widget">
-                                <div class="address-widget">
-                                    <div class="footer-logo">
-                                        <a href="index.html">
-                                            <h2>Shikh<span>Bo</span></h2>
-                                        </a>
-                                    </div>
-                                    <p>900 Lucerne Station Road Terrace, Orlando, FL 32806, USA contact@shikhbo.com</p>
-                                    <span>+880 123 456 789</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3d-5">
-                            <div class="single_widget">
-                                <h3>Useful Links</h3>
-                                <div class="widget-list">
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Instructors</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Service Plus</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-xs-5">
-                            <div class="single_widget">
-                                <h3>Our Services</h3>
-                                <div class="widget-list">
-                                    <ul>
-                                        <li><a href="#">CSE Engeering</a></li>
-                                        <li><a href="#">Graduation</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">Admission</a></li>
-                                        <li><a href="#">Internation</a></li>
-                                        <li><a href="#">Faqs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single_widget">
-                                <h3>Latest News</h3>
-                                <div class="widget-item">
-                                    <div class="widget-image">
-                                        <a href="blog_details.html"><img src="assets/images/blog_01.jpg" alt="blog one"></a>
-                                    </div>
-                                    <div class="widget-content">
-                                        <h5><a href="blog_details.html">7 Step Social Media Marke ting Strategy</a></h5>
-                                        <div class="widget-meta">
-                                            <span>05 Oct 2023</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-item">
-                                    <div class="widget-image">
-                                        <a href="blog_details.html"><img src="assets/images/blog_02.jpg" alt="blog one"></a>
-                                    </div>
-                                    <div class="widget-content">
-                                        <h5><a href="blog_details.html">7 Step Social Media Marke ting Strategy</a></h5>
-                                        <div class="widget-meta">
-                                            <span>05 Oct 2023</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom-wrapper border-top py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-bottom">
-                                <div class="copyright-text">
-                                    <p>Shikhbo 2023. All Rights Reserved.</p>
-                                </div>
-                                <div class="social-accounts">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer data-aos="fade-up" id="footer">
+        
     </footer>
     <!-- End Footer -->
     <div class="scroll-top">
@@ -1408,4 +948,5 @@
     <script src="assets/js/bootnavbar.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
