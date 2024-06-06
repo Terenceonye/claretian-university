@@ -14,26 +14,13 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- loading the header and footer -->
+    <script src="./assets/js/header-footer.js"></script>
 
     <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
 
-    <script>
-        // Function to load content into a specified element
-            function loadContent(url, elementId) {
-                fetch(url)
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById(elementId).innerHTML = data;
-                    })
-                    .catch(error => console.error(`Error loading ${url}:`, error.message));
-            }
-
-            // Call the function to load the header and footer when the DOM is fully loaded
-            document.addEventListener('DOMContentLoaded', () => {
-                loadContent('header.html', 'header');
-                loadContent('footer.html', 'footer');
-            });
-    </script>
+    
 
     <style>
         .main-menu-area>.container {
@@ -542,15 +529,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="section-title mb-4">
+                        <div class="section-title mb-4 text-center">
                             <h4>Leadership</h4>
                             <h2>Claretian University's guiding figures</h2>
                         </div>
                     </div>
                 </div>
+
+                <style>
+                    .single-team .designation:hover h6 {
+                        color: #0d1028;
+                    }
+                </style>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="our-team-carousel owl-carousel">
+                            
                             <div class="single-team">
                                 <div class="member-image">
                                     <img src="assets/images/member_01.jpg" alt="team member" class="img-fluid">
@@ -564,56 +558,27 @@
                                 </div>
                                 <div class="member-info default_bg">
                                     <div class="designation">
-                                        <h6>Mitchel</h6>
-                                        <span>CEO & Founder</span>
+                                        <h6>
+                                            <span style="font-style: italic; display: block;">Rev. Fr. Prof.</span>
+                                            <p style="text-transform: uppercase; font-size: 18px;">Wenceslaus Madu</p>
+                                            <span style="font-style: italic; display: block;">Vice Chancellor</span>
+                                        </h6>
+                            
+                            
+                            
+                                        <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
+                            
+                            
                                     </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
-                            <div class="single-team">
-                                <div class="member-image">
-                                    <img src="assets/images/member_02.jpg" alt="team member" class="img-fluid">
-                                    <div class="social-profile">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info default_bg">
-                                    <div class="designation">
-                                        <h6>Mark Parker</h6>
-                                        <span>Senior Teacher</span>
-                                    </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-team">
-                                <div class="member-image">
-                                    <img src="assets/images/member_03.jpg" alt="team member" class="img-fluid">
-                                    <div class="social-profile">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info default_bg">
-                                    <div class="designation">
-                                        <h6>Selina Gomej</h6>
-                                        <span>Physics Teacher</span>
-                                    </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
+
                             <div class="single-team">
                                 <div class="member-image">
                                     <img src="assets/images/member_01.jpg" alt="team member" class="img-fluid">
                                     <div class="social-profile">
                                         <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -621,18 +586,28 @@
                                 </div>
                                 <div class="member-info default_bg">
                                     <div class="designation">
-                                        <h6>Mitchel</h6>
-                                        <span>CEO & Founder</span>
+                                        <h6>
+                                            <span style="font-style: italic; display: block;">Rev. Fr. Dr.</span>
+                                            <p style="text-transform: uppercase; font-size: 18px;">John Ezenwankwo</p>
+                                            <span style="font-style: italic; display: block;">Registrar</span>
+                                        </h6>
+                            
+                            
+                            
+                                        <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
+                            
+                            
                                     </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
+
+                            
                             <div class="single-team">
                                 <div class="member-image">
-                                    <img src="assets/images/member_02.jpg" alt="team member" class="img-fluid">
+                                    <img src="assets/images/member_01.jpg" alt="team member" class="img-fluid">
                                     <div class="social-profile">
                                         <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -640,18 +615,27 @@
                                 </div>
                                 <div class="member-info default_bg">
                                     <div class="designation">
-                                        <h6>Selina Gomej</h6>
-                                        <span>Physics Teacher</span>
+                                        <h6>
+                                            <span style="font-style: italic; display: block;">Rev. Fr.</span>
+                                            <p style="text-transform: uppercase; font-size: 18px;">Henry Osuagwu</p>
+                                            <span style="font-style: italic; display: block;">Burser</span>
+                                        </h6>
+                            
+                            
+                            
+                                        <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
+                            
+                            
                                     </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-team">
                                 <div class="member-image">
-                                    <img src="assets/images/member_03.jpg" alt="team member" class="img-fluid">
+                                    <img src="assets/images/member_01.jpg" alt="team member" class="img-fluid">
                                     <div class="social-profile">
                                         <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -659,12 +643,22 @@
                                 </div>
                                 <div class="member-info default_bg">
                                     <div class="designation">
-                                        <h6>Selina Gomej</h6>
-                                        <span>Physics Teacher</span>
+                                        <h6>
+                                            <span style="font-style: italic; display: block;">Dr.</span>
+                                            <p style="text-transform: uppercase; font-size: 18px;">Ngozi Azubuogu</p>
+                                            <span style="font-style: italic; display: block;">Librarian</span>
+                                        </h6>
+                            
+                            
+                            
+                                        <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
+                            
+                            
                                     </div>
-                                    <a href="teacher_details.html">View Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -693,21 +687,21 @@
                                 <img src="assets/images/events.jpg" alt="event image" class="img-fluid">
                                 <div class="events-info bg-white">
                                     <div class="single-event-data">
-                                        <p><i class="fas fa-calendar-alt"></i> 05 October, 2023</p>
+                                        <p><i class="fas fa-calendar-alt"></i> 05 October, 2024</p>
                                     </div>
                                     <div class="single-event-data">
                                         <p><i class="fa fa-clock"></i> 8:00 AM - 5:00 PM</p>
                                     </div>
                                     <div class="single-event-data">
-                                        <p><i class="fas fa-map-marker-alt"></i> NewYork, USA</p>
+                                        <p><i class="fas fa-map-marker-alt"></i> Maryland, Nekede</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="event-text p-4 bg-white">
-                                <h2><a href="event-single.html">Build Education Website With Wp And</a></h2>
-                                <p>Coluta nobis est eligendi optio cumque nihil impedit quo minusd quod maxime placeat
-                                    facere possimus, omnis voluptas assumenda est. Our friendly support team is
-                                    standing. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h2><a href="event-single.html">CUN to Resume for 2024/2025 Session</a></h2>
+                                <p>As the calendar flips and a new academic year beckons, Claretian University of Nigeria (CUN) is abuzz with anticipation
+                                and excitement. The 2024/2025 academic session is just around the corner, and preparations are in full swing to welcome
+                                both new and returning students to our vibrant campus.</p>
 
                                 <a href="event-single.html" class="button_one">Join Event <i
                                         class="fa fa-angle-right"></i></a>
@@ -722,17 +716,16 @@
                                     <p>Dec</p>
                                 </div>
                                 <div class="event-content">
-                                    <h5><a href="event-single.html">Build Education Website Using WP</a></h5>
+                                    <h5><a href="event-single.html">Virtual Speaking Masterclass</a></h5>
                                     <div class="event-meta">
                                         <div class="single-meta">
                                             <p> <i class="fa fa-clock"></i> 8:00 AM - 5:00 PM</p>
                                         </div>
                                         <div class="single-meta">
-                                            <p><i class="fas fa-map-marker-alt"></i> NewYork, USA</p>
+                                            <p><i class="fas fa-map-marker-alt"></i>Maryland Nekede</p>
                                         </div>
                                     </div>
-                                    <p>Consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore dolore
-                                        magna aliqua....</p>
+                                    <p>Are you ready to take your public speaking skills to the next level? Whether you're a seasoned speaker looking...</p>
                                 </div>
                             </div>
                             <div class="single-event mb-4">
@@ -741,17 +734,16 @@
                                     <p>Feb</p>
                                 </div>
                                 <div class="event-content">
-                                    <h5><a href="event-single.html">Build Education Website Using WP</a></h5>
+                                    <h5><a href="event-single.html">Freshman Orientation Guide</a></h5>
                                     <div class="event-meta">
                                         <div class="single-meta">
                                             <p> <i class="fa fa-clock"></i> 8:00 AM - 5:00 PM</p>
                                         </div>
                                         <div class="single-meta">
-                                            <p> <i class="fa fa-location"></i> NewYork, USA</p>
+                                            <p> <i class="fa fa-location"></i> Maryland, Nekede</p>
                                         </div>
                                     </div>
-                                    <p>Consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore dolore
-                                        magna aliqua....</p>
+                                    <p>Tips and insights for new students to navigate their first year at university successfully....</p>
                                 </div>
                             </div>
                             <div class="single-event">
@@ -760,17 +752,16 @@
                                     <p>June</p>
                                 </div>
                                 <div class="event-content">
-                                    <h5><a href="event-single.html">Build Education Website Using WP</a></h5>
+                                    <h5><a href="event-single.html">Networking on Campus</a></h5>
                                     <div class="event-meta">
                                         <div class="single-meta">
                                             <p> <i class="fa fa-clock"></i> 8:00 AM - 5:00 PM</p>
                                         </div>
                                         <div class="single-meta">
-                                            <p> <i class="fa fa-location"></i> NewYork, USA</p>
+                                            <p> <i class="fa fa-location"></i> Maryland, Nekede</p>
                                         </div>
                                     </div>
-                                    <p>Consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore dolore
-                                        magna aliqua....</p>
+                                    <p>How to build valuable connections with peers, professors, and industry professionals at university....</p>
                                 </div>
                             </div>
                         </div>
