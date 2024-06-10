@@ -12,4 +12,5 @@ function loadContent(url, elementId) {
 document.addEventListener("DOMContentLoaded", () => {
   loadContent("header.html", "header");
   loadContent("footer.html", "footer");
+  loadContent("footer2.html", "footer2");
 });

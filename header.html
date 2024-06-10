@@ -80,27 +80,27 @@
                                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">University
                                                 <br>Administration</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">CUN Governance
+                                                <li><a class="dropdown-item" href="./cun-governance-structure.html">CUN Governance
                                                         <br>Structure</a></li>
-                                                <li><a class="dropdown-item" href="#">The Chancellor</a></li>
-                                                <li><a class="dropdown-item" href="#">The Pro-Chancellor</a>
+                                                <li><a class="dropdown-item" href="the-chancellor.html">The Chancellor</a></li>
+                                                <li><a class="dropdown-item" href="pro-chancellor.html">The Pro-Chancellor</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="#">The Vice Chancellor</a>
+                                                <li><a class="dropdown-item" href="vice-chancellor.html">The Vice Chancellor</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="#">Office of the
+                                                <li><a class="dropdown-item" href="deputy-vice-chancellor.html">Office of the
                                                         Deputy<br>Vice Chancellor (DVC)</a></li>
-                                                <li><a class="dropdown-item" href="#">Board of Trustees</a></li>
+                                                <li><a class="dropdown-item" href="board-of-trustees.html">Board of Trustees</a></li>
                                             </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="departments.html">The Bursary
+                                        <li><a class="dropdown-item" href="the-bursary-unit.html">The Bursary
                                                 Unit</a></li>
-                                        <li><a class="dropdown-item" href="courses.html">The Registry Unit</a>
+                                        <li><a class="dropdown-item" href="the-registry-unit.html">The Registry Unit</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="teachers.html">Public Relations
+                                        <li><a class="dropdown-item" href="public-relations-unit.html">Public Relations
                                                 <br>Unit</a></li>
-                                        <li><a class="dropdown-item" href="events.html">The Internal Audit
+                                        <li><a class="dropdown-item" href="the-internal-audit.html">The Internal Audit
                                                 <br>Unit</a></li>
-                                        <li><a class="dropdown-item" href="gallery.html">The Senate</a></li>
+                                        <li><a class="dropdown-item" href="the-senate.html">The Senate</a></li>
                                     </ul>
                                 </li>
 
@@ -117,18 +117,22 @@
                                             <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                                 data-bs-toggle="dropdown">Student Admission Status</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item"
-                                                        href="https://claretianuniversity.edu.ng/dev_/admission-status/">Click
-                                                        HERE to check<br>your Admission Status</a></li>
-                                                <li><a class="dropdown-item" href="#">Post UTME Result</a></li>
-                                                <li><a class="dropdown-item" href="#">Direct Entry
+                                                <li>
+                                                    <a href="#admission_status_modal" data-bs-toggle="modal" data-bs-target="#status_modal" class="nav-link">Click
+                                                    HERE to check<br>your Admission Status</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#post_utme_modal" data-bs-toggle="modal" data-bs-target="#utme_modal" class="nav-link">Post UTME Result</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="https://portal.claretianuniversity.edu.ng/students/newapplicant">Direct Entry
                                                         O'Level<br>Update</a></li>
                                                 <li><a class="dropdown-item"
                                                         href="https://www.youtube.com/watch?v=eAY7hyyu1Mc"
                                                         target="_blank">Campus Tour for <br>Prospective
                                                         Students</a></li>
-                                                <li><a class="dropdown-item" href="#">Check your screening
-                                                        <br>Result HERE</a></li>
+                                                <li>
+                                                    <a href="#screening_modal" data-bs-toggle="modal" data-bs-target="#screening_modal" class="nav-link">Post UTME Result</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -142,14 +146,12 @@
                                         Admissions
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                                data-bs-toggle="dropdown">Undergraduate Studies</a>
-                                        <li><a class="dropdown-item" href="#">School of Post Graduate</a></li>
+                                        <li><a class="dropdown-item" href="undergraduate-studies.html">Undergraduate Studies</a></li>
+                                        <li><a class="dropdown-item" href="school-postgraduate.html">School of Post Graduate</a></li>
                                         <li><a class="dropdown-item"
                                                 href="https://portal.claretianuniversity.edu.ng/students/applicationguide">Apply
                                                 Now</a></li>
-                                        <li><a class="dropdown-item" href="#">Available Courses for Study</a>
+                                        <li><a class="dropdown-item" href="available-courses.html">Available Courses for Study</a>
                                         </li>
                                         <li><a class="dropdown-item" href="#">Admission Requirements</a></li>
                                         <li><a class="dropdown-item" href="#">Contact Admission Unit</a></li>
@@ -434,3 +436,74 @@
         </div>
     </div>
 </div>
+
+
+<!-- Button trigger modal -->
+<!-- Start Status Modal -->
+<div class="modal fade" id="status_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">ADMISSION STATUS</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                
+                <p>The result will be published as soon as Admission has been offered to Students</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End status Modal -->
+
+
+
+<!-- Start utme Modal -->
+<div class="modal fade" id="utme_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">POST UTME RESULT</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>The result will be published as soon as Admission has been offered to Students</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End utme Modal -->
+
+
+<!-- Start Screening Modal -->
+<div class="modal fade" id="screening_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">SCREENING RESULTS</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>Coming Soon!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End screening Modal -->
