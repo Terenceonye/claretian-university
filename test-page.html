@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu with Dropdowns</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">University Administration</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./cun-governance-structure.html">CUN Governance
+                                            Structure</a></li>
+                                    <li><a class="dropdown-item" href="the-chancellor.html">The Chancellor</a></li>
+                                    <li><a class="dropdown-item" href="pro-chancellor.html">The Pro-Chancellor</a></li>
+                                    <li><a class="dropdown-item" href="vice-chancellor.html">The Vice Chancellor</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="deputy-vice-chancellor.html">Office of the Deputy
+                                            Vice Chancellor (DVC)</a></li>
+                                    <li><a class="dropdown-item" href="board-of-trustees.html">Board of Trustees</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="the-bursary-unit.html">The Bursary Unit</a></li>
+                            <li><a class="dropdown-item" href="the-registry-unit.html">The Registry Unit</a></li>
+                            <li><a class="dropdown-item" href="public-relations-unit.html">Public Relations Unit</a>
+                            </li>
+                            <li><a class="dropdown-item" href="the-internal-audit.html">The Internal Audit Unit</a></li>
+                            <li><a class="dropdown-item" href="the-senate.html">The Senate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Students
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Student Admission Status</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#admission_status_modal" data-toggle="modal" data-target="#status_modal"
+                                            class="dropdown-item">Click HERE to check<br>your Admission Status</a>
+                                    </li>
+                                    <li>
+                                        <a href="#post_utme_modal" data-toggle="modal" data-target="#utme_modal" class="dropdown-item">Post
+                                            UTME Result</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://portal.claretianuniversity.edu.ng/students/newapplicant">Direct Entry
+                                            O'Level<br>Update</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.youtube.com/watch?v=eAY7hyyu1Mc" target="_blank">Campus
+                                            Tour for <br>Prospective Students</a>
+                                    </li>
+                                    <li>
+                                        <a href="#screening_modal" data-toggle="modal" data-target="#screening_modal"
+                                            class="dropdown-item">Check your Screening Result HERE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="undergraduate-studies.html">Undergraduate Studies</a></li>
+                            <li><a class="dropdown-item" href="school-postgraduate.html">School of Post Graduate</a></li>
+                            <li><a class="dropdown-item" href="https://portal.claretianuniversity.edu.ng/students/applicationguide">Apply
+                                    Now</a></li>
+                            <li><a class="dropdown-item" href="available-courses.html">Available Courses for Study</a></li>
+                            <li><a class="dropdown-item" href="admission-requirements.html">Admission Requirements</a></li>
+                            <li>
+                                <a href="#contact_admission_unit_modal" data-toggle="modal" data-target="#contact_admission_unit_modal"
+                                    class="dropdown-item">Contact Admission Unit</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="white-space: nowrap;">
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="schoolOfScience" role="button" data-toggle="dropdown">
+                                    School of Science & Computing
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="schoolOfScience">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfSocialScience" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Social Science
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfSocialScience">
+                                            <li><a class="dropdown-item" href="accounting.html">Bachelor of Science (B.Sc) in Accounting</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="taxation.html">Bachelor of Science (B.Sc) in Taxation</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="economics.html">Bachelor of Science (B.Sc) in Economics</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfComputing" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Computing & Mathematical Sciences
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfComputing">
+                                            <li><a class="dropdown-item" href="mathematics.html">Bachelor of Science (B.Sc) in
+                                                    Mathematics</a></li>
+                                            <li><a class="dropdown-item" href="cyber-security.html">Bachelor of Science (B.Sc) in Cyber
+                                                    Security</a></li>
+                                            <li><a class="dropdown-item" href="software-engineering.html">Bachelor of Science (B.Sc) in
+                                                    Software Engineering</a></li>
+                                            <li><a class="dropdown-item" href="computer-science.html">Bachelor of Science (B.Sc) in Computer
+                                                    Science</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfPhysicalSciences" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Physical Sciences
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfPhysicalSciences">
+                                            <li><a class="dropdown-item" href="physics.html">Bachelor of Science (B.Sc) in Physics</a></li>
+                                            <li><a class="dropdown-item" href="chemistry.html">Bachelor of Science (B.Sc) in Chemistry</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="electronics-renewable.html">Bachelor of Science (B.Sc) in
+                                                    Physics with Electronics Renewable Energy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfBiologicalSciences" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Biological Sciences
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfBiologicalSciences">
+                                            <li><a class="dropdown-item" href="biology.html">Bachelor of Science (B.Sc) in Biology</a></li>
+                                            <li><a class="dropdown-item" href="forensic-science.html">Bachelor of Science (B.Sc) in Forensic
+                                                    Science</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="schoolOfArts" role="button" data-toggle="dropdown">
+                                    School of Arts, Social and Management Sciences
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="schoolOfArts">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfHumanities" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Humanities
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfHumanities">
+                                            <li><a class="dropdown-item" href="philosophy.html">Bachelor of Arts (B.A) in Philosophy</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="criminology.html">Bachelor of Science (B.Sc) in Criminology
+                                                    and Peace Studies</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="schoolOfAgriculture" role="button"
+                                    data-toggle="dropdown">
+                                    School of Agriculture
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="schoolOfAgriculture">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfAgriculture" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Agriculture
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfAgriculture">
+                                            <li><a class="dropdown-item" href="agriculture.html">Bachelor of Agriculture (B.Agric),
+                                                    Extension, Crop Science, Animal Production, Economics, Soil Science</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="schoolOfHealthSciences" role="button"
+                                    data-toggle="dropdown">
+                                    School of Health Sciences
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="schoolOfHealthSciences">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="departmentOfMedicalSciences" role="button"
+                                            data-toggle="dropdown">
+                                            Department of Medical Sciences
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="departmentOfMedicalSciences">
+                                            <li><a class="dropdown-item" href="public-health.html">Bachelor of Science (B.Sc) in Public
+                                                    Health</a></li>
+                                            <li><a class="dropdown-item" href="physiotherapy.html">Bachelor of Physiotherapy</a></li>
+                                            <li><a class="dropdown-item" href="nursing-science.html">Bachelor of Nursing Sciences</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="directorates" role="button" data-toggle="dropdown">
+                                    Directorates, Institutes & Centres
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="directorates">
+                                    <li><a class="dropdown-item" href="directorate-for-research.html">Directorate of Research and
+                                            Innovation</a></li>
+                                    <li><a class="dropdown-item" href="centre-for-distance-learning.html">Centre of Distance Learning &
+                                            Continuing Education</a></li>
+                                    <li><a class="dropdown-item" href="aikit.html">AIKIT</a></li>
+                                    <li><a class="dropdown-item" href="tne.html">Trans-National Education</a></li>
+                                    <li><a class="dropdown-item" href="directorate-for-intl-cooperating.html">Directorate for International
+                                            Cooperating and Linkages</a></li>
+                                    <li><a class="dropdown-item" href="endowment-centres.html">Endowment Centres</a></li>
+                                    <li><a class="dropdown-item" href="medicine-research-centre.html">Science Medicine Research Centre</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+
+<!-- Button trigger modal -->
+<!-- Start Status Modal -->
+<div class="modal fade" id="status_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">ADMISSION STATUS</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>The result will be published as soon as Admission has been offered to Students</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End status Modal -->
+
+
+
+<!-- Start utme Modal -->
+<div class="modal fade" id="utme_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">POST UTME RESULT</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>The result will be published as soon as Admission has been offered to Students</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End utme Modal -->
+
+
+<!-- Start Screening Modal -->
+<div class="modal fade" id="screening_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">SCREENING RESULTS</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>Coming Soon!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End screening Modal -->
+
+
+<!-- Start contact admission unit Modal -->
+<div class="modal fade" id="contact_admission_unit_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">ADMISSION UNIT - Contact Info</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto text-center">
+                            <h5>Contact Us for More Information</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-phone-alt mr-2"></i>
+                                    <a href="tel:+23409016189060">+234 (0) 901 6189060</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    <a
+                                        href="mailto:admissions@claretianuniversity.edu.ng">admissions@claretianuniversity.edu.ng</a>
+                                </li>
+                            </ul>
+                            <p class="mt-4">For General Enquiries:</p>
+                            <p>
+                                <i class="fas fa-envelope mr-2"></i>
+                                <a href="mailto:info@claretianuniversity.edu.ng">info@claretianuniversity.edu.ng</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End contact admission unit Modal -->
+
+
+
+<!-- Start bookshop Modal -->
+<div class="modal fade" id="bookshop_modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title sm-sub-title">UNIVERSITY BOOKSHOP</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+
+                <p>Coming Soon!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button_one" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End bookshop Modal -->
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Handle click event for submenus
+            $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+                }
+                var $subMenu = $(this).next('.dropdown-menu');
+                $subMenu.toggleClass('show');
+
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                    $('.dropdown-submenu .show').removeClass('show');
+                });
+
+                return false;
+            });
+
+            // Collapse all submenus when the main dropdown is closed
+            $('.nav-item.dropdown').on('hidden.bs.dropdown', function (e) {
+                $(this).find('.dropdown-menu.show').removeClass('show');
+            });
+        });
+    </script>
+
+    <style>
+        /* Custom style for submenu */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            margin-left: 0;
+        }
+    </style>
+</body>
+
+</html>
