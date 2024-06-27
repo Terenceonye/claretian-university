@@ -451,8 +451,9 @@ button.close {
 .button_five {
   display: inline-block;
   position: relative;
-  background-color: #09bafa;
-  color: #fff;
+  /* background-color: #09bafa; */
+  border: 2px solid #09bafa;
+  color: #09bafa;
   padding: 10px 35px;
   transition: all 0.4s linear 0s;
   font-size: 15px;
@@ -472,8 +473,8 @@ button.close {
 }
 .button_five:hover {
   text-decoration: none;
-  background-color: #fff;
-  color: #09bafa;
+  background-color: #09bafa;
+  color: #fff;
 }
 
 .button_block {
@@ -2254,6 +2255,9 @@ body p {
 }
 .single-featured-5 .feature-image {
   position: relative;
+}
+.single-featured-5 .feature-image img{
+  /* height: 197px; */
 }
 .single-featured-5 .feature-image .product-price-4 {
   position: absolute;
@@ -5812,6 +5816,16 @@ body p {
   transition: all 0.4s linear 0s;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+.single-item p{
+  height: 140px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 .single-item h4 a {
   color: #002147;
   margin: 15px 0;
@@ -6245,5 +6259,6 @@ p.form-message.success {
 .course-review p i {
   color: #f99e1c;
 }
+
 
 /*# sourceMappingURL=style.css.map */
